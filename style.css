@@ -9,6 +9,8 @@ p {
 /*==============
  PCのスタイル
  ==============*/
+ @media screen and (min-width: 768px) {
+                                                  
   /* 横幅設定 */
   body {
     max-width: 1080px;
@@ -470,3 +472,22 @@ p {
                                                   color: #ffffff;
                                                   float: right;
                                                 }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+}
